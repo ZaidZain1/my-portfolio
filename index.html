@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  
+  <title>Zaid Zain - Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left"><a href="/">Zaid Zain</a></div>
+    <div class="right">
+      <a href="#headshot">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#leave-a-message">Leave a message !</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="headshot" id="headshot">
+        <h2>Hey world, i'm zaid╰(*°▽°*)╯!</h2>
+        <img src="images/WhatsApp Image 2025-05-18 at 9.01.31 PM.jpeg" alt="zaid pic" />
+        <p>
+          Hey, I'm Zaid — a Computer Engineering undergraduate student at GJU. I'm constantly learning new tools and technologies to grow as a software developer. This portfolio showcases my projects, skills, and my journey in the tech world.
+          <span class="extra-line">Outside of career and academics, I enjoy working on cars.</span>
+        </p>
+        <div class="links">
+          <a href="https://www.instagram.com/zade.hus?igsh=YWwxM2tiYzR2Z2pl" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/ZaidZain1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/zaid-hesban" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-scroll-container">
+        <div class="project-card">
+          <img src="images/ChatGPT Image May 19, 2025, 02_30_14 AM.png" alt="Recipe API" />
+          <h3>WCICZ Recipe API</h3>
+          <p>A user-friendly API that provides easy access to a wide variety of recipes, allowing users to search, add, and manage their favorite dishes effortlessly.</p>
+          <a href="https://zaidzain1.github.io/wcicz/" target="_blank">https://zaidzain1.github.io/wcicz/</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-icons">
+        <i class="fa-brands fa-python" title="Python"></i>
+        <i class="fa-solid fa-database" title="Databases"></i>
+        <i class="devicon-c-plain" title="C Programming"></i>
+        <i class="fa-brands fa-figma" title="Figma"></i>
+      </div>
+    </section>
+
+    <!-- LEAVE A MESSAGE -->
+    <section id="leave-a-message" class="coming-soon-section">
+      <h2>Leave a Message</h2>
+      <p>Coming soon !</p>
+    </section>
+  </main>
+
+  <script>
+    // Simple script to add shadow on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+        
+      }
+    });
+  </script>
+</body>
+</html><footer>
+  <p>© 2023 Zaid Zain </p>
+</footer>
